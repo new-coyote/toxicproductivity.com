@@ -3,5 +3,13 @@
 @import "tailwindcss/utilities";
 
 body {
-    background-color: cornflowerblue;
+    background: url('../../assets/images/page-bg1.png') no-repeat top 0 right -30vw/80%,
+    url('../../assets/images/page-bg2.png') no-repeat bottom -20vh left -11%;
+}
+
+@screen md {
+    body {
+        background: url('../../assets/images/page-bg1.png') no-repeat top 0px right -20%/40vw,
+        url('../../assets/images/page-bg2.png') no-repeat bottom left/40vw;
+    }
 }

@@ -20,7 +20,8 @@
     "content:debug": "DEBUG=Eleventy* content:build",
     "assets:clean": "rimraf ./content/assets ./content/_data/assets.json webpack.hash",
     "assets:build": "node tasks/webpack.js",
-    "assets:watch": "webpack --watch"
+    "assets:watch": "webpack --watch",
+    "preserve": "npm run assets:build"
   },
   "author": "Ben Martinez-Bateman <ben@alwaysblank.org>",
   "repository": {

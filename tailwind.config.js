@@ -6,10 +6,16 @@ module.exports = {
     ],
     darkMode: 'media',
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                header: "'Roboto Condensed', sans-serif",
+            }
+        },
     },
     variants: {
         extend: {},
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/typography'),
+    ],
 }
