@@ -16,3 +16,7 @@ strong {
     background-size: contain;
     background-position: center;
 }
+
+h1:hover > div {
+    transform: rotate(0);
+}
