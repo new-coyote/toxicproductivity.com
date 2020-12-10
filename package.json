@@ -64,6 +64,7 @@
   "dependencies": {
     "@11in/cloudinary": "^1.2.2",
     "@11in/elf-generator-blog": "^1.0.0",
+    "html-minifier": "^4.0.0",
     "markdown-it": "^12.0.3",
     "markdown-it-emoji": "^2.0.0",
     "twemoji": "^13.0.1"

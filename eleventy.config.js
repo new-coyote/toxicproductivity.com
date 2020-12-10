@@ -19,7 +19,7 @@ module.exports = function (conf) {
         conf.addPlugin(cloudinary, {
             name: "djd6kxozp",
             transforms: [
-                { dpr: "auto", responsive: true, crop: "scale", }
+                {dpr: "auto", responsive: true, crop: "scale",}
             ],
             defaults: {
                 width: 1024
@@ -51,6 +51,18 @@ module.exports = function (conf) {
                 console.error(err)
             }
         });
+    });
+
+    conf.addTransform("htmlmin", function (content, outputPath) {
+        if (outputPath.endsWith(".html")) {
+            return require('html-minifier').minify(content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true
+            });
+        }
+
+        return content;
     });
 
     return {
