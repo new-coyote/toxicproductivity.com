@@ -8,7 +8,12 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                header: "'Roboto Condensed', sans-serif",
+                header: "'Lora', serif",
+                body: "'Merriweather', serif",
+                display: "'Poppins', sans-serif",
+            },
+            width: {
+                headerImage: '27rem',
             }
         },
     },

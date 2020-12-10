@@ -1,17 +1,30 @@
 ---
 layout: app.njk
 ---
-<div class="flex flex-col md:flex-row-reverse">
-    <h1 class="text-4xl md:text-6xl font-header md:-ml-32 text-right md:text-left">
-        <div class="">Confronting</div>
-        <div class="md:ml-16">Toxic</div>
-        <div class="md:ml-32">Productivity</div>
+<div class="flex flex-col my-6 md:my-16 items-center">
+    <h1 class="text-4xl md:text-7xl lg:text-8xl font-header text-center font-display text-purple-600 mb-12 uppercase">
+       <div class="transform -rotate-6">Confronting</div>
+        <div class="transform rotate-12 text-green-400">Toxic</div>
+       <div class="transform rotate-3 text-pink-400">Productivity</div>
     </h1>
-    <img src="{% asset_image assets, 'sad.png' %}" class="w-96"/>
-</div>
-<div class="flex items-center md:flex-row flex-col">
-    <p class="prose prose-xl font-bold">{{ intro | safe }}</p>
-    <img src="{% asset_image assets, 'bg1.png' %}" class="w-64"/>
+    <img src="{% asset_image assets, 'sad.svg' %}" class="w-headerImage max-w-full md:mb-6"/>
 </div>
 
-<div class="prose prose-lg">{{ content | safe }}</div>
+<div class="prose prose-lg md:mt-10">
+    {% for section in sections %}
+        {% if section.content and section.asset %}
+            <div class="{{ section.class }}">
+                <div class="md:px-10 md:py-5">
+                        {{ section.content | md |safe }}
+                </div>
+                <img src="{% asset_image assets, section.asset %}" class="w-64" alt="{{ section.image_alt }}" />
+            </div>
+        {% elseif section.content %}
+        <div class="{{ section.class }} my-14 px-5 md:px-10">
+        {{ section.content | md |safe }}
+        </div>
+        {% elseif section.asset %}
+            <img src="{% asset_image assets, section.asset %}" class="{{ section.class }}" alt="{{ section.image_alt }}" />
+        {% endif %}
+    {% endfor %}
+</div>

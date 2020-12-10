@@ -2,14 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-body {
-    background: url('../../assets/images/page-bg1.png') no-repeat top 0 right -30vw/80%,
-    url('../../assets/images/page-bg2.png') no-repeat bottom -20vh left -11%;
+.emoji {
+    height: 1.2em;
 }
 
-@screen md {
-    body {
-        background: url('../../assets/images/page-bg1.png') no-repeat top 0px right -20%/40vw,
-        url('../../assets/images/page-bg2.png') no-repeat bottom left/40vw;
-    }
+strong {
+    color: theme('colors.purple.500') !important;
 }
