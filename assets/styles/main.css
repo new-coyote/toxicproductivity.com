@@ -9,3 +9,10 @@
 strong {
     color: theme('colors.purple.500') !important;
 }
+
+.signup-wrapper {
+    background-image: url(../images/signup-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

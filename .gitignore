@@ -5,3 +5,6 @@
 /content/assets
 /content/_data/assets.json
 webpack.hash
+
+# Devilbox nonsense
+htdocs

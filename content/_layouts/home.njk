@@ -2,29 +2,59 @@
 layout: app.njk
 ---
 <div class="flex flex-col my-6 md:my-16 items-center">
-    <h1 class="text-4xl md:text-7xl lg:text-8xl font-header text-center font-display text-purple-600 mb-12 uppercase">
-       <div class="transform -rotate-6">Confronting</div>
+    <h1 class="text-4xl md:text-7xl lg:text-8xl text-center font-black font-display text-purple-600 mb-12 uppercase">
+        <div class="transform -rotate-6">Confronting</div>
         <div class="transform rotate-12 text-green-400">Toxic</div>
-       <div class="transform rotate-3 text-pink-400">Productivity</div>
+        <div class="transform rotate-3 text-pink-400">Productivity</div>
     </h1>
     <img src="{% asset_image assets, 'sad.svg' %}" class="w-headerImage max-w-full md:mb-6"/>
 </div>
 
 <div class="prose prose-lg md:mt-10">
     {% for section in sections %}
-        {% if section.content and section.asset %}
-            <div class="{{ section.class }}">
-                <div class="md:px-10 md:py-5">
-                        {{ section.content | md |safe }}
-                </div>
-                <img src="{% asset_image assets, section.asset %}" class="w-64" alt="{{ section.image_alt }}" />
-            </div>
-        {% elseif section.content %}
-        <div class="{{ section.class }} my-14 px-5 md:px-10">
-        {{ section.content | md |safe }}
+    {% if section.content and section.asset %}
+    <div class="{{ section.class }}">
+        <div class="md:px-10 md:py-5">
+            {{ section.content | md |safe }}
         </div>
-        {% elseif section.asset %}
-            <img src="{% asset_image assets, section.asset %}" class="{{ section.class }}" alt="{{ section.image_alt }}" />
-        {% endif %}
+        <img src="{% asset_image assets, section.asset %}" class="w-64" alt="{{ section.image_alt }}"/>
+    </div>
+    {% elseif section.content %}
+    <div class="{{ section.class }} my-14 px-5 md:px-10">
+        {{ section.content | md |safe }}
+    </div>
+    {% elseif section.asset %}
+    <img src="{% asset_image assets, section.asset %}" class="{{ section.class }}" alt="{{ section.image_alt }}"/>
+    {% endif %}
     {% endfor %}
 </div>
+
+<noscript><a href="https://www.eventbrite.com/e/confronting-toxic-productivity-tickets-130625840405"
+             rel="noopener noreferrer" target="_blank"></noscript>
+<div class="text-center py-16 md:py-44 mt-20 md:mt-32 signup-wrapper">
+    <h3 class="font-header mb-8 text-purple-600 text-3xl md:text-4xl font-bold">What are you waiting for?</h3>
+    <button id="eventbrite-widget-modal-trigger-130625840405" type="button"
+            class="inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-bold rounded-md text-white bg-pink-400 hover:bg-pink-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500 font-display text-xl">
+        🎟️
+        <span class="ml-2">Click Here To Sign Up!</span>
+    </button>
+</div>
+<noscript></a>Buy Tickets on Eventbrite</noscript>
+
+<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+<script type="text/javascript">
+    var exampleCallback = function () {
+        console.log('Order complete!');
+    };
+
+    window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: '130625840405',
+        modal: true,
+        modalTriggerElementId: 'eventbrite-widget-modal-trigger-130625840405',
+        onOrderComplete: exampleCallback
+    });
+</script>
+
+<img src="{% asset_image assets, 'tree.svg' %}" class="w-32 mx-auto mt-24 md:mt-44" alt="a potted tree"/>
