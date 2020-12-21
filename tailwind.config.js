@@ -1,10 +1,15 @@
 module.exports = {
-    purge: [
-        './content/**/*.njk',
-        './content/**/*.html',
-        './content/**/*.md',
-        './assets/scripts/**/*.js',
-    ],
+    purge: {
+        content: [
+            './content/**/*.njk',
+            './content/**/*.html',
+            './content/**/*.md',
+            './assets/scripts/**/*.js',
+        ],
+        options: {
+            safelist: ['h1:hover > div'],
+        },
+    },
     darkMode: 'media',
     theme: {
         extend: {
