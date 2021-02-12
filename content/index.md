@@ -13,7 +13,7 @@ sections:
         content: In this iteration of their extremely popular training **Toxic Productivity and the Creative Cycle**, Marina Martinez-Bateman is bringing healing from toxic productivity into the workplace.
         class: prose-xl border-l-4 border-purple-500
     -
-        content: New exercises 💪, new skills 🤹, and new outcomes 🌈 tailored to toxic productivity in the working world. If you are an employee, a freelancer or in a leadership position, Avoid Toxic Productivity and Revolutionize Your Workflow will help you achieve your professional goals without sacrificing your life and values.
+        content: New exercises 💪, new skills 🤹, and new outcomes 🌈 tailored to toxic productivity in the working world. If you are an employee, a freelancer or in a leadership position, Confronting Toxic Productivity will help you achieve your professional goals without sacrificing your life and values.
     -
         asset: happy.svg
         image_alt: happy person playing guitar at their computer with a cat
