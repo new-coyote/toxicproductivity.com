@@ -1,4 +1,32 @@
 ---
 label: Blog post
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: TItle
+  description: This will also be used to generated the URL.
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Description/Excerpt
+  description: This will be used for the meta description and the excerpt (the short
+    intro that appear on the blog index for this post).
+- name: date
+  type: datetime
+  label: Date
+  description: The date this post is associated with. <strong>Setting the date in
+    the future does not schedule the post; Posts are published when you save them.</strong>
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
