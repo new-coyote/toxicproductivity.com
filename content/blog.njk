@@ -2,7 +2,7 @@
 layout: app.njk
 permalink: "blog/"
 ---
-
+{% include "nav.njk" %}
 <header class="mb-12">
     <h1 class="text-4xl">Blog</h1>
 </header>
@@ -10,10 +10,10 @@ permalink: "blog/"
 <div>
     {% for post in collections.post %}
         <article class="mb-8">
-            <h2 class="mb-2 text-2xl hover:text-purple-600"><a href="{{ post.url }}">{{ post.data.title }} »</a></h2>
+            <h2 class="mb-2 text-2xl"><a href="{{ post.url }}">{{ post.data.title }} »</a></h2>
             <div class="prose prose-xl">
                 <div class="prose-sm">{{ post.date.toLocaleDateString('us-EN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) }}</div>
-                {{ post.data.excerpt | safe }}
+                {{ post.data.description | safe }}
                 <div>
 
                 </div>

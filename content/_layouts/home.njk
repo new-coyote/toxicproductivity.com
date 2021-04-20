@@ -10,6 +10,14 @@ layout: app.njk
     <img src="{% asset_image assets, 'sad.svg' %}" class="w-headerImage max-w-full md:mb-6"/>
 </div>
 
+{% if collections.post %}
+<div class="mt-6 flex items-center justify-center">
+    <a href="/blog" class="text-2xl">
+    <span class="text-pink-500 hover:text-white  text-center font-bold p-4 border-4 border-double rounded-md border-pink-300 hover:bg-pink-400 inline-flex">👉 Visit our ✍️ Blog! 👀</span>
+    </a>
+</div>
+{% endif %}
+
 <div class="prose prose-lg md:mt-10">
     {% for section in sections %}
     {% if section.content and section.asset %}

@@ -4,6 +4,7 @@
 
 .emoji {
     height: 1.2em;
+    display: inline-block;
 }
 
 strong {
@@ -19,4 +20,14 @@ strong {
 
 h1:hover > div {
     transform: rotate(0);
+}
+
+a {
+    color: theme('colors.purple.500');
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: theme('colors.pink.500');
 }
