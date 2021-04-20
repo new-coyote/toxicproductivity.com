@@ -28,10 +28,10 @@ sections:
   image_alt: a smiling person
   class: flex flex-col lg:flex-row-reverse items-center lg:-mx-32 px-8 md:px-16 py-6
     md:py-10 bg-pink-300 my-16 lg:text-right
-- content: By the end of the workshop, participants will have a start on their own
-    journey away from toxic productivity, as well as several tools and prompts to
-    help them change their working habits and outlooks. Take the next step on reclaiming
-    your life from the toxic systems and get your ticket today. Workshops are limited
-    to 20 participants for maximum engagement.
+- content: "By the end of the workshop, participants will have a roadmap to start
+    their own journey away from toxic productivity, as well as several tools and prompts
+    to help them change their working habits and outlooks. \n\nTake the next step
+    on reclaiming your life from the toxic systems and get your ticket today. Workshops
+    are limited to 20 participants for maximum engagement."
 
 ---
