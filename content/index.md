@@ -32,6 +32,6 @@ sections:
     their own journey away from toxic productivity, as well as several tools and prompts
     to help them change their working habits and outlooks. \n\nTake the next step
     on reclaiming your life from the toxic systems and get your ticket today. Workshops
-    are limited to 20 participants for maximum engagement."
+    are limited to 25 participants for maximum engagement."
 
 ---
