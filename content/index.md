@@ -18,12 +18,10 @@ sections:
     you achieve your professional goals without sacrificing your life and values."
 - asset: happy.svg
   image_alt: happy person playing guitar at their computer with a cat
-- content: This workshop was designed and born on Zoom and utilizes all of the advantages
-    of a digital platform to maximize participant experience. This is a interactive
-    training where the agenda is determined by the attendees making every training
-    highly personalized. Participants can choose their level of engagement and post
-    in chat or use Zoom private messaging to ask anonymous questions in an otherwise
-    public venue.
+- content: |-
+    "Through our group discussion I was able to examine my coping skills with a kind eye and think about when and why they developed, how they serve me, and ways in which I'd like to grow. Marina creates a welcoming environment that directly reflects the specific group involved." Emmy Eao, IPRC
+
+    This workshop was designed and born on Zoom and utilizes all of the advantages of a digital platform to maximize participant experience. This is a interactive training where the agenda is determined by the attendees making every training highly personalized. Participants can choose their level of engagement and post in chat or use Zoom private messaging to ask anonymous questions in an otherwise public venue.
   asset: smiling-face.svg
   image_alt: a smiling person
   class: flex flex-col lg:flex-row-reverse items-center lg:-mx-32 px-8 md:px-16 py-6
